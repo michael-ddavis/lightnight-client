@@ -3,6 +3,7 @@ import { Fragment, useState } from "react";
 import { Menu, Transition, Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
+import logo from "../../src/images/light_night_bw.png"
 
 const navigation = [
   { name: "Home", href: "#", current: true },
@@ -17,7 +18,7 @@ const Navbar = () => {
   return (
     <header className="bg-white drop-shadow mb-8">
       <nav
-        className="flex items-center justify-between p-6 lg:px-8"
+        className="flex items-center justify-between p-4 lg:px-8"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
@@ -25,7 +26,7 @@ const Navbar = () => {
             <span className="sr-only">Your Company</span>
             <img
               className="h-8 w-auto"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+              src={logo}
               alt=""
             />
           </a>
@@ -44,7 +45,7 @@ const Navbar = () => {
           {navigation.map((item) => (
             <Link to={item.href}
               key={item.name}
-              className="text-sm font-semibold leading-6 text-gray-900"
+              className="text-md font-semibold leading-6 text-gray-900"
             >
               {item.name}
             </Link>
@@ -63,10 +64,10 @@ const Navbar = () => {
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
-              />
+              className="h-8 w-auto"
+              src={logo}
+              alt=""
+            />
             </a>
             <button
               type="button"
