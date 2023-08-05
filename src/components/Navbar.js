@@ -2,19 +2,20 @@
 import { Fragment, useState } from "react";
 import { Menu, Transition, Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Link } from "react-router-dom";
 
 const navigation = [
   { name: "Home", href: "#", current: true },
-  { name: "About", href: "#", current: false },
-  { name: "Events", href: "#", current: false },
-  { name: "Give", href: "#", current: false },
+  { name: "About", href: "/about", current: false },
+  { name: "Events", href: "/events", current: false },
+  { name: "Give", href: "/give", current: false },
 ];
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white drop-shadow">
+    <header className="bg-white drop-shadow mb-8">
       <nav
         className="flex items-center justify-between p-6 lg:px-8"
         aria-label="Global"
@@ -41,13 +42,12 @@ const Navbar = () => {
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
           {navigation.map((item) => (
-            <a
+            <Link to={item.href}
               key={item.name}
-              href={item.href}
               className="text-sm font-semibold leading-6 text-gray-900"
             >
               {item.name}
-            </a>
+            </Link>
           ))}
         </div>
       </nav>
