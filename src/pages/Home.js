@@ -27,88 +27,86 @@ const cards = [
 
 const Home = () => {
   return (
-    <div className="relative isolate">
-      <div className="overflow-hidden">
-        <div className="mx-auto max-w-7xl px-6 md:pb-32 md:pt-16 lg:pt-16 sm:pt-60 lg:px-8">
-          <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
-            <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
-              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                We’re pursuing <span className="text-blue-700">Jesus</span>,
-                advancing <span className="text-orange-500">Revival</span> and
-                taking His{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-300 to-blue-500">
-                  Presence
-                </span>{" "}
-                to this generation
-              </h1>
-              <p className="relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
-                Cupidatat minim id magna ipsum sint dolor qui. Sunt sit in quis
-                cupidatat mollit aute velit. Et labore commodo nulla aliqua
-                proident mollit ullamco exercitation tempor. Sint aliqua anim
-                nulla sunt mollit id pariatur in voluptate cillum.
-              </p>
-              <div className="mt-10 flex items-center gap-x-6">
-                <Link
-                  to={"/events"}
-                  className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                >
-                  More Info
-                </Link>
-                <Link
-                  to={"/events"}
-                  href="#"
-                  className="text-sm font-semibold leading-6 text-gray-900"
-                >
-                  Register <span aria-hidden="true">→</span>
-                </Link>
+    <div className="overflow-hidden">
+      <div className="mx-auto max-w-7xl px-6 md:pb-32 pt-8 md:pt-16 lg:px-8">
+        <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
+          <div className="w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
+            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+              We’re pursuing <span className="text-blue-700">Jesus</span>,
+              advancing <span className="text-orange-500">Revival</span> and
+              taking His{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-300 to-blue-500">
+                Presence
+              </span>{" "}
+              to this generation
+            </h1>
+            <p className="mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
+              Cupidatat minim id magna ipsum sint dolor qui. Sunt sit in quis
+              cupidatat mollit aute velit. Et labore commodo nulla aliqua
+              proident mollit ullamco exercitation tempor. Sint aliqua anim
+              nulla sunt mollit id pariatur in voluptate cillum.
+            </p>
+            <div className="mt-10 flex items-center gap-x-6">
+              <Link
+                to={"/events"}
+                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                More Info
+              </Link>
+              <Link
+                to={"/events"}
+                href="#"
+                className="text-sm font-semibold leading-6 text-gray-900"
+              >
+                Register <span aria-hidden="true">→</span>
+              </Link>
+            </div>
+          </div>
+          <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
+            <div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
+              <div className="relative">
+                <img
+                  src={picture1}
+                  alt=""
+                  className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                />
+                <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
               </div>
             </div>
-            <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
-              <div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
-                <div className="relative">
-                  <img
-                    src={picture1}
-                    alt=""
-                    className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
-                  />
-                  <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
-                </div>
+            <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
+              <div className="relative">
+                <img
+                  src={picture2}
+                  alt=""
+                  className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                />
+                <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
               </div>
-              <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
-                <div className="relative">
-                  <img
-                    src={picture2}
-                    alt=""
-                    className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
-                  />
-                  <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
-                </div>
-                <div className="relative">
-                  <img
-                    src={picture3}
-                    alt=""
-                    className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
-                  />
-                  <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
-                </div>
+              <div className="relative">
+                <img
+                  src={picture3}
+                  alt=""
+                  className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                />
+                <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
               </div>
-              <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
-                <div className="relative">
-                  <img
-                    src={picture4}
-                    alt=""
-                    className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
-                  />
-                  <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
-                </div>
-                <div className="relative">
-                  <img
-                    src={picture5}
-                    alt=""
-                    className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
-                  />
-                  <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
-                </div>
+            </div>
+            <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
+              <div className="relative">
+                <img
+                  src={picture4}
+                  alt=""
+                  className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                />
+                <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
+              </div>
+              <div className="relative">
+                <img
+                  src={picture5}
+                  alt=""
+                  className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                />
+                <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
               </div>
             </div>
           </div>
@@ -117,8 +115,8 @@ const Home = () => {
       {/* About Section */}
       <section className="p-4">
         <div className="relative isolate rounded-md overflow-hidden bg-gray-900 py-24 sm:py-32">
-          <img 
-          src={aboutSectionImage}
+          <img
+            src={aboutSectionImage}
             alt=""
             className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
           />
